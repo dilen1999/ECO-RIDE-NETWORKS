@@ -21,7 +21,7 @@ function Bikes_view({ handleQrWindowClose, selectedBike }) {
 
     try {
       const result = await axios.get(
-        `http://localhost:8095/api/v1/Bikes/${selectedBike.bikeId}`
+        `https://backend-host-9thd.onrender.com/api/v1/Bikes/${selectedBike.bikeId}`
       );
       console.log("Result data:", result.data);
       setcurrentBikeData([result.data]); // Wrap in array to map over it

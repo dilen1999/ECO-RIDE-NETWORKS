@@ -36,7 +36,7 @@ function Bike() {
 
   const loadBikes = async () => {
     try {
-      const result = await axios.get("http://localhost:8095/api/v1/Bikes");
+      const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/Bikes");
       console.log("Result data:", result.data);
       setTotalBikes(result.data.length);
       setBikes(result.data);
@@ -49,7 +49,7 @@ function Bike() {
   const deleteBikes = async (bike_id) => {
     if (window.confirm("Are you sure you want to delete this bike?")) {
       try {
-        await axios.delete(`http://localhost:8095/api/v1/Bikes/${bike_id}`);
+        await axios.delete(`https://backend-host-9thd.onrender.com/api/v1/Bikes/${bike_id}`);
         loadBikes();
       } catch (error) {
         console.error("Error deleting bike:", error);
@@ -61,7 +61,7 @@ function Bike() {
   const TotalOnRideUsersfun = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/user/totalonRideUsers"
+        "https://backend-host-9thd.onrender.com/api/v1/user/totalonRideUsers"
       );
       settotalOnRideUsers(result.data);
     } catch (error) {
@@ -73,7 +73,7 @@ function Bike() {
   const AllBikesinstations = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/total-available-bikes"
+        "https://backend-host-9thd.onrender.com/api/v1/station/total-available-bikes"
       );
       setBikesinStation(result.data);
     } catch (error) {
@@ -84,7 +84,7 @@ function Bike() {
 
   const AllRidebikes = async () => {
     try {
-      const result = await axios.get("http://localhost:8095/api/v1/ride/total");
+      const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/ride/total");
       setAllRides(result.data);
     } catch (error) {
       console.error("Error fetching all ride bikes:", error);

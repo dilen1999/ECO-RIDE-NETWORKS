@@ -28,14 +28,14 @@ function User() {
   }, []);
 
   const loadUsers = async () => {
-    const result = await axios.get("http://localhost:8095/api/v1/user/all");
+    const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/user/all");
     setUser(result.data);
     console.log(result.data);
   };
 
   const loadCurrentUsers = async () => {
     try {
-      const result = await axios.get("http://localhost:8095/api/v1/user/inRide");
+      const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/user/inRide");
       console.log("Result data:", result.data);
       
       setTotalCurrentUsers(result.data.length);
@@ -45,17 +45,17 @@ function User() {
   };
 
   const loadTotalNewUsers = async () => {
-    const result = await axios.get("http://localhost:8095/api/v1/user/totalVerifiedUsers");
+    const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/user/totalVerifiedUsers");
     setTotalNewUsers(result.data);
   };
 
   const loadTotalOnRideUsers = async () => {
-    const result = await axios.get("http://localhost:8095/api/v1/user/totalonRideUsers");
+    const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/user/totalonRideUsers");
     setTotalOnRideUsers(result.data);
   };
 
   const loadAllRideBikes = async () => {
-    const result = await axios.get("http://localhost:8095/api/v1/ride/total");
+    const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/ride/total");
     setAllRides(result.data);
   };
 

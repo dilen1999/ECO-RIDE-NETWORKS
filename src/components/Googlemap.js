@@ -8,7 +8,7 @@ const MapContainer = (props) => {
   // Function to fetch active ride paths from the backend
   const fetchActiveRidePaths = async () => {
     try {
-      const response = await axios.get("http://localhost:8095/api/v1/ride/activeRidePaths");
+      const response = await axios.get("https://backend-host-9thd.onrender.com/api/v1/ride/activeRidePaths");
       setRidePaths(response.data);
     } catch (error) {
       console.error("Error fetching active ride paths:", error);

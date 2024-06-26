@@ -75,7 +75,7 @@ function Addbike() {
         initStationId: addbike.initStationId,
       };
       console.log(requestData);
-      await axios.post("http://localhost:8095/api/v1/Bikes", requestData);
+      await axios.post("https://backend-host-9thd.onrender.com/api/v1/Bikes", requestData);
 
       // window.location.href = '/bike';
     } catch (error) {
@@ -86,7 +86,7 @@ function Addbike() {
   const fetchLatestBikeId = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8095/api/v1/Bikes/latestBikeId"
+        "https://backend-host-9thd.onrender.com/api/v1/Bikes/latestBikeId"
       );
       setLatestBikeId(response.data); // Update here
     } catch (error) {

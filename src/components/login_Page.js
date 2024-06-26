@@ -8,7 +8,7 @@ function Login() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
 
-  const LOGIN_API_URL = "http://localhost:8095/api/v1/login";
+  const LOGIN_API_URL = "https://backend-host-9thd.onrender.com/api/v1/login";
 
   const handleLogin = () => {
     const loginData = {

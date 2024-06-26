@@ -54,7 +54,7 @@ function QrCodeGenerator({handleQrWindowClose}) {
   const loadBikes = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/Bikes/latestBikeId"
+        "https://backend-host-9thd.onrender.com/api/v1/Bikes/latestBikeId"
       );
       const latestBike = result.data;
       // Construct the bike details string

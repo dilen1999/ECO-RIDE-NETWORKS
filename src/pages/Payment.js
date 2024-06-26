@@ -44,7 +44,7 @@ function Payment() {
 
       const promises = months.map((month) =>
         axios.get(
-          `http://localhost:8095/api/v1/userpayment/monthlySum?year=${currentYear}&month=${month}`
+          `https://backend-host-9thd.onrender.com/api/v1/userpayment/monthlySum?year=${currentYear}&month=${month}`
         )
       );
 
@@ -66,7 +66,7 @@ function Payment() {
   const fetchUserPayments = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:8095/api/v1/userpayment/all"
+        "https://backend-host-9thd.onrender.com/api/v1/userpayment/all"
       );
       setPayments(response.data);
     } catch (error) {

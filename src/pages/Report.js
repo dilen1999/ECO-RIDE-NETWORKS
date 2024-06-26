@@ -32,7 +32,7 @@ function Report1() {
   const loadTotalIncome = async () => {
     try {
       const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
-      const response = await axios.get(`http://localhost:8095/api/v1/userpayment/total?date=${today}`);
+      const response = await axios.get(`https://backend-host-9thd.onrender.com/api/v1/userpayment/total?date=${today}`);
       setTotalIncome(response.data.totalEstimatedAmount);
     } catch (error) {
       console.error("Error loading total income:", error);
@@ -41,7 +41,7 @@ function Report1() {
 
   const loadMonthlyIncome = async (year, month) => {
     try {
-      const response = await axios.get(`http://localhost:8095/api/v1/userpayment/monthlySum?year=${year}&month=${month}`);
+      const response = await axios.get(`https://backend-host-9thd.onrender.com/api/v1/userpayment/monthlySum?year=${year}&month=${month}`);
       setMonthlyIncome(response.data);
     } catch (error) {
       console.error("Error loading monthly income:", error);
@@ -55,7 +55,7 @@ function Report1() {
 
       for (let day = 1; day <= daysInMonth; day++) {
         const date = `${currentDate.getFullYear()}-${String(currentDate.getMonth() + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
-        promises.push(axios.get(`http://localhost:8095/api/v1/userpayment/dailySum?date=${date}`));
+        promises.push(axios.get(`https://backend-host-9thd.onrender.com/api/v1/userpayment/dailySum?date=${date}`));
       }
 
       const responses = await Promise.all(promises);

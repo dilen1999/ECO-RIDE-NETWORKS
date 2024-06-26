@@ -12,7 +12,7 @@ function User_view({ handleQrWindowClose, selectedUser }) {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const result = await axios.get(`http://localhost:8095/api/v1/user/${selectedUser.userId}`); // Ensure correct endpoint
+        const result = await axios.get(`https://backend-host-9thd.onrender.com/api/v1/user/${selectedUser.userId}`); // Ensure correct endpoint
         setCurrentUserData(result.data);
       } catch (error) {
         console.error("Error loading user data:", error);

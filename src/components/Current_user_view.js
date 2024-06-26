@@ -21,12 +21,12 @@ function Current_user_view({ handleQrWindowClose, selectedUser }) {
       }
 
       // Fetch ride details
-      const rideResult = await axios.get(`http://localhost:8095/api/v1/ride/${selectedUser.rideId}`);
+      const rideResult = await axios.get(`https://backend-host-9thd.onrender.com/api/v1/ride/${selectedUser.rideId}`);
       console.log("Ride details:", rideResult.data);
       setRideDetails(rideResult.data);
 
       // Fetch current location path
-      const pathResult = await axios.get(`http://localhost:8095/api/v1/ride/${selectedUser.rideId}/currentLocation`);
+      const pathResult = await axios.get(`https://backend-host-9thd.onrender.com/api/v1/ride/${selectedUser.rideId}/currentLocation`);
       console.log("Ride path:", pathResult.data);
       setRidePath(pathResult.data);
 

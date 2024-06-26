@@ -106,7 +106,7 @@ function Home() {
   };
   const loadBikes = async () => {
     try {
-      const result = await axios.get("http://localhost:8095/api/v1/Bikes");
+      const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/Bikes");
       setTotalBikes(result.data.length);
       setBikes(result.data);
     } catch (error) {
@@ -117,7 +117,7 @@ function Home() {
   const TotalOnRideUsersfun = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/user/totalonRideUsers"
+        "https://backend-host-9thd.onrender.com/api/v1/user/totalonRideUsers"
       );
       settotalOnRideUsers(result.data);
     } catch (error) {
@@ -146,7 +146,7 @@ function Home() {
     // Updated API call to load rides instead of users
     const loadCurrentRides = async () => {
       try {
-        const result = await axios.get("http://localhost:8095/api/v1/ride/onRide");
+        const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/ride/onRide");
         setCurrentRides(result.data);
         setTotalCurrentUsers(result.data.length); // Assuming each ride is a unique user for simplicity
       } catch (error) {
@@ -157,7 +157,7 @@ function Home() {
   const TotalNewUsersfun = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/user/totalVerifiedUsers"
+        "https://backend-host-9thd.onrender.com/api/v1/user/totalVerifiedUsers"
       );
       settotalNewUsers(result.data);
     } catch (error) {
@@ -168,7 +168,7 @@ function Home() {
   const ST1availableBikes = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/ST1/available-bikes"
+        "https://backend-host-9thd.onrender.com/api/v1/station/ST1/available-bikes"
       );
       setAvlBikesST1(result.data);
     } catch (error) {
@@ -179,7 +179,7 @@ function Home() {
   const ST1parkingPlace = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/ST1/available-parking-slots"
+        "https://backend-host-9thd.onrender.com/api/v1/station/ST1/available-parking-slots"
       );
       setParkingPlaceST1(result.data);
     } catch (error) {
@@ -190,7 +190,7 @@ function Home() {
   const ST2availableBikes = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/ST2/available-bikes"
+        "https://backend-host-9thd.onrender.com/api/v1/station/ST2/available-bikes"
       );
       setAvlBikesST2(result.data);
     } catch (error) {
@@ -201,7 +201,7 @@ function Home() {
   const ST2parkingPlace = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/ST2/available-parking-slots"
+        "https://backend-host-9thd.onrender.com/api/v1/station/ST2/available-parking-slots"
       );
       setParkingPlaceST2(result.data);
     } catch (error) {
@@ -212,7 +212,7 @@ function Home() {
   const ST3availableBikes = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/ST3/available-bikes"
+        "https://backend-host-9thd.onrender.com/api/v1/station/ST3/available-bikes"
       );
       setAvlBikesST3(result.data);
     } catch (error) {
@@ -223,7 +223,7 @@ function Home() {
   const ST3parkingPlace = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/ST3/available-parking-slots"
+        "https://backend-host-9thd.onrender.com/api/v1/station/ST3/available-parking-slots"
       );
       setParkingPlaceST3(result.data);
     } catch (error) {
@@ -234,7 +234,7 @@ function Home() {
   const ST4availableBikes = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/ST4/available-bikes"
+        "https://backend-host-9thd.onrender.com/api/v1/station/ST4/available-bikes"
       );
       setAvlBikesST4(result.data);
     } catch (error) {
@@ -245,7 +245,7 @@ function Home() {
   const ST4parkingPlace = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/ST4/available-parking-slots"
+        "https://backend-host-9thd.onrender.com/api/v1/station/ST4/available-parking-slots"
       );
       setParkingPlaceST4(result.data);
     } catch (error) {
@@ -256,7 +256,7 @@ function Home() {
   const AllBikesinstations = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/station/total-available-bikes"
+        "https://backend-host-9thd.onrender.com/api/v1/station/total-available-bikes"
       );
       setBikesinStation(result.data);
     } catch (error) {
@@ -267,7 +267,7 @@ function Home() {
   const AllBikesinMaintenance = async () => {
     try {
       const result = await axios.get(
-        "http://localhost:8095/api/v1/bikes/maintenance/bikes-in-maintenance-count"
+        "https://backend-host-9thd.onrender.com/api/v1/bikes/maintenance/bikes-in-maintenance-count"
       );
       setBikesinMaintenance(result.data);
     } catch (error) {
@@ -277,7 +277,7 @@ function Home() {
 
   const AllRidebikes = async () => {
     try {
-      const result = await axios.get("http://localhost:8095/api/v1/ride/total");
+      const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/ride/total");
       setAllRides(result.data);
     } catch (error) {
       console.error("Error loading all ride bikes:", error);

@@ -20,24 +20,24 @@ function FairStructure() {
   });
 
   const faresettingshour = async () => {
-    const result = await axios.get("http://localhost:8095/api/v1/fare/hourly-rate");
+    const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/fare/hourly-rate");
     sethourly(result.data);
     console.log(hourly);
   };
 
   const faresettingsmonthly = async ()=>{
-    const result = await axios.get("http://localhost:8095/api/v1/fare/monthly-rate");
+    const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/fare/monthly-rate");
     setMonthly(result.data);
     console.log(monthly);
   }
   const faresettingsdaily = async ()=>{
-    const result = await axios.get("http://localhost:8095/api/v1/fare/daily-rate");
+    const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/fare/daily-rate");
     setDaily(result.data);
     console.log(daily);
   }
 
   const faresettingsweekly = async () => {
-    const result = await axios.get("http://localhost:8095/api/v1/fare/weekly-rate");
+    const result = await axios.get("https://backend-host-9thd.onrender.com/api/v1/fare/weekly-rate");
     setweekly(result.data);
     console.log(Weekly);
   };

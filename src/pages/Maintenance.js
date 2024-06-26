@@ -24,7 +24,7 @@ function Maintenance() {
 
   const loadMaintenance1 = async () => {
     const result = await axios.get(
-      "http://localhost:8095/api/v1/bikes/maintenance/all" // done 
+      "https://backend-host-9thd.onrender.com/api/v1/bikes/maintenance/all" // done 
     );
     setMaintenance1(result.data);
   };

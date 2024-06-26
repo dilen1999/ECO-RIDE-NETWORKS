@@ -7,7 +7,7 @@ const Current_user_map = ({ google, rideId }) => {
 
   const fetchCurrentLocation = async () => {
     try {
-      const response = await axios.get(`http://localhost:8095/api/v1/ride/${rideId}/currentLocation`);
+      const response = await axios.get(`https://backend-host-9thd.onrender.com/api/v1/ride/${rideId}/currentLocation`);
       setRideLocation(response.data);
     } catch (error) {
       console.error("Error fetching current location:", error);
