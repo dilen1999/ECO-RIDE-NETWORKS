@@ -1,0 +1,357 @@
+.nav_main{
+  position: relative;
+  z-index: 10000;
+  
+
+}
+
+/* .circle_logo {
+  align-items: center;
+  justify-content: center;
+  width: 70px; /* Adjust outer circle width *
+  height: 70px; /* Adjust outer circle height *
+  border-radius: 50%;
+  border: 1px solid black; /* Set border color and width *
+  background: 
+  red;
+  margin-top: 30px;
+  margin-left: 90px;
+  position: relative; /* Needed for positioning inner circle *
+} */
+
+.circle_logo_profile {
+  align-items: center;
+  justify-content: center;
+  width: 47px; /* Adjust outer circle width */
+  height: 47px; /* Adjust outer circle height */
+  border-radius: 50%;
+  border: 1px solid black; /* Set border color and width */
+  background: red;
+  margin-top: 120px;
+  margin-left: 50px;
+  position: relative; /* Needed for positioning inner circle */
+}
+
+
+
+
+
+/* .logo_image {
+  width: 70px; /* Adjust logo image size *
+  height: 70px; /* Adjust logo image size *
+  border-radius: 50%;
+  object-fit: cover; /* Preserve aspect ratio and cover the entire circle *
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+.circle_logo {
+  align-items: center;
+  justify-content: center;
+  width: 9vh;
+  height: 4vw;
+  border-radius: 50%;
+  border: 1px solid black;
+  background: red;
+  margin-top: 30px;
+  margin-left: 90px;
+  position: relative;
+}
+
+.logo_image {
+  width: 9vh;
+  height: 4vw;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  border: 2px solid blue;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Add media queries for smaller screen sizes */
+@media only screen and (max-width: 768px) {
+  .circle_logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+  }
+
+  .logo_image {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Add media queries for even smaller screen sizes, like mobile phones */
+@media only screen and (max-width: 480px) {
+  .circle_logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .logo_image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+.logo_image_profile {
+  width: 47px; /* Adjust logo image size */
+  height: 47px; /* Adjust logo image size */
+  border-radius: 50%;
+  object-fit: cover; /* Preserve aspect ratio and cover the entire circle */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.app_name {
+  margin-right: 90px;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.app_name > div:last-child {
+  margin-left: 60px; /* Adjust the margin-top value as needed */
+}
+
+.home_button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  /* align-items: center; */
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.home_button_space {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.home_button_spaceB {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceU {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceP {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceR {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceN {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.home_button_spaceF {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceM {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button_spaceC {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.home_button span {
+  margin-left: 12px; /* Adjust spacing between icon and text */
+}
+.home_button_spaceB span {
+  margin-left: 9px; /* Adjust spacing between icon and text */
+}
+
+.home_button_spaceU span {
+  margin-left: 18px; /* Adjust spacing between icon and text */
+}
+.home_button_spaceP span {
+  margin-left: 21px; /* Adjust spacing between icon and text */
+}
+.home_button_spaceR span {
+  margin-left: 18px; /* Adjust spacing between icon and text */
+}
+.home_button_spaceN span {
+  margin-left: 18px; /* Adjust spacing between icon and text */
+}
+
+.home_button_spaceF span {
+  margin-left: 9px; /* Adjust spacing between icon and text */
+}
+
+.home_button_spaceM span {
+  margin-left: 15px; /* Adjust spacing between icon and text */
+}
+.home_button_spaceC span {
+  margin-left: 16px; /* Adjust spacing between icon and text */
+}
+
+.home_adj {
+  margin-top: 0px;
+}
+
+.home_button {
+  text-decoration: none; /* Remove underline */
+}
+
+.home_button_space {
+  text-decoration: none; /* Remove underline */
+}
+.home_button_spaceB {
+  text-decoration: none; /* Remove underline */
+}
+
+.home_button_spaceU {
+  text-decoration: none; /* Remove underline */
+}
+
+.home_button_spaceP {
+  text-decoration: none; /* Remove underline */
+}
+.home_button_spaceR {
+  text-decoration: none; /* Remove underline */
+}
+
+.home_button_spaceN {
+  text-decoration: none; /* Remove underline */
+}
+.home_button_spaceF {
+  text-decoration: none; /* Remove underline */
+}
+
+.home_button_spaceM {
+  text-decoration: none; /* Remove underline */
+}
+.home_button_spaceC {
+  text-decoration: none; /* Remove underline */
+}
+
+.column {
+  background-color: #effaff;
+}
+
+.profile_name {
+  margin-bottom: 20px;
+  margin-top: 130px;
+  margin-left: 40px;
+  align-items: center;
+  text-align: left;
+}
+
+.Dashboard {
+  align-items: center;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.dot{
+  margin-top: 10px;
+}
+
+.Location {
+  text-decoration: none; /* Remove underline */
+}
+
+
+
+.Location {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 24px;
+  margin-left: 30px;
+  margin-top: 10px;
+}

@@ -1,0 +1,26 @@
+.paymentbox {
+  padding: 20px;
+  background-color: #fff;
+  margin-left: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+  height: 630px;
+}
+
+.paymentbox1{
+    height: 300px;
+    border-bottom: black;
+    border-bottom: 2px solid rgb(61, 61, 146);
+}
+.paymentbox2{
+    height: 330px;
+}
+.payment_table{
+    width: 100%;
+}
+.colpayment{
+    width: 500px;
+}
+.payment_box{
+    width: 100px;
+}

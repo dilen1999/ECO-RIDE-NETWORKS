@@ -1,0 +1,49 @@
+.maintenanceprofile-checkbox {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .maintenanceprofile-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .maintenanceprofile-circle {
+    width: 20px; /* Adjust the width and height as needed */
+    height: 20px;
+    border-radius: 5%; /* Make it circular */
+    background-color: rgb(218, 60, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* When the checkbox is checked */
+  .maintenanceprofile-checkbox input:checked + .maintenanceprofile-circle::before {
+    content: "";
+    display: block;
+    width: 20px; /* Adjust the checkmark size */
+    height: 20px;
+    border-radius: 5%; /* Make it circular */
+    background-color: green; /* Color of the checkmark */
+  }
+  
+  .maininput2{
+    border: none;
+    font-size: 18px;
+    
+  }
+
+  .redBox {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: flex; /* Use flexbox */
+    /* align-items: center; Align vertically */
+    justify-content: center; /* Align horizontally */
+    
+  }
+  
+  

@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Mulish', sans-serif;
+} */
+
+.qrcode__container {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  height: 80vh;
+  background-color: white;
+}
+
+.qrcode__container--parent {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.qrcode__input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.qrcode__input input {
+  width: 100%;
+  padding: 10px;
+  font-size: 12px;
+  outline: none;
+  resize: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+.qrcode__input button,
+.qrcode__download button {
+  display: inline-block;
+  padding: 7px;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(96, 96, 246);
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.qrcode__download {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.qrcode__download button {
+  margin-top: 10px;
+}
+
+.closeQrWindow {
+  position: relative;
+  margin-left: 58vw;
+  margin-top: 10px;
+  cursor: pointer;
+}
+

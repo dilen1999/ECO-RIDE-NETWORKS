@@ -1,0 +1,91 @@
+.fair_heading{
+text-align: center;
+align-items: center;
+}
+
+.fair_label{
+    text-align: center;
+    margin-bottom: 20px;
+    width: 400px;
+    
+}
+.fair_input{
+    border: none;
+    border-bottom:1px solid black ;
+    width: 200px;
+}
+.fair_width{
+    width: 400px;
+}
+
+.faddbiketextwidth{
+    width: 300px;
+    font-size: 18px;
+
+}
+.fbike-format{
+    margin-left: 100px;
+    margin-top: 15px;
+    text-align: left;
+}
+.faddbiketextwidth12{
+    width: 100px;
+    font-size: 18px;
+    
+}
+.faddbikeinput{
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+.faddbikepagebutton{
+    padding: 8px 12px;
+   background-color: #009efd;
+   border-radius: 5px;
+   text-decoration: none;
+   text-align: center;
+   height: 25px;
+   width: 100px;
+   margin-top: 25px;
+   right: 310px; /* Align to the left side of the parent container */
+   position: absolute; /* Position absolutely within the parent container */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-weight: bold;
+   border: none;
+   margin-right: 250px;
+   margin-top: 40px;
+ }
+ .fcancelbikepagebutton{
+     padding: 8px 12px;
+    background-color: #009efd;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    height: 24px;
+    width: 98px;
+    margin-top: 25px;
+    right: 310px; /* Align to the left side of the parent container */
+    position: absolute; /* Position absolutely within the parent container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    margin-right: 450px;
+    margin-top: 40px;
+  }
+ 
+ .faddbikepagebutton:hover {
+     background-color: rgb(51, 81, 230);
+   }
+ 
+   .fcancelbikepagebutton:hover {
+     background-color: rgb(229, 126, 82);
+   }

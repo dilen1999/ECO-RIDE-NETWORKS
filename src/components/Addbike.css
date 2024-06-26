@@ -1,0 +1,99 @@
+.addbikeboxbike {
+  height: 64vh;
+  width: 80vw;
+  margin-left: 35px;
+  margin-top: 35px;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.addbike-text {
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-bottom: 200px;
+  text-align: center;
+  font-size: 24px;
+  justify-content: center;
+}
+
+.bike-format {
+  margin-right: 20hw;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.addbiketextwidth {
+  width: 15vw;
+}
+.addbiketextwidth12 {
+  width: 100px;
+  font-size: 24px;
+}
+.addbikeinput {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-size: 24px;
+}
+.addbikepagebutton {
+  padding: 8px 12px;
+  background-color: #009efd;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  height: 40px;
+  width: 120px;
+  margin-top: 25px;
+  right: 310px; /* Align to the left side of the parent container */
+  position: absolute; /* Position absolutely within the parent container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-right: 400px;
+  margin-top: 40px;
+}
+.cancelbikepagebutton {
+  padding: 8px 12px;
+  background-color: #009efd;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  height: 24px;
+  width: 98px;
+  margin-top: 25px;
+  right: 310px; /* Align to the left side of the parent container */
+  position: absolute; /* Position absolutely within the parent container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  border: none;
+  margin-right: 600px;
+  margin-top: 40px;
+}
+
+.addbikepagebutton:hover {
+  background-color: rgb(51, 81, 230);
+}
+
+.cancelbikepagebutton:hover {
+  background-color: rgb(229, 126, 82);
+}
+
+.QrWindow {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

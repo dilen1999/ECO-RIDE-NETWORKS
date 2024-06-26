@@ -1,0 +1,29 @@
+.userviewbox{
+    padding: 20px;
+    background: white;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-right: 30px;
+    height: 630px;
+}
+.cloumn1{
+    border-color: black;
+    border: 2px solid black;
+}
+.column2{
+    border-color: black;
+    border: 2px solid black;
+}
+
+.Sidebar-text{
+    margin-top: 60px;
+    margin-left: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.viewbar-name-width{
+    width: 150px;
+}
+.viewbar-name-widthbar{
+    width: 50px;
+}

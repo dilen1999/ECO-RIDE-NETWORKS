@@ -1,0 +1,142 @@
+.table th {
+  padding-bottom: 10px;
+  padding-right: 10px; /* Adjust this value to change the amount of space */
+}
+
+.bike-table th {
+  padding-bottom: 10px;
+  padding-right: 30px; /* Adjust this value to change the amount of space */
+}
+
+.table-container {
+  max-height: 450px; /* Set maximum height */
+  overflow-y: auto;
+  width: 100%; /* Set width to fill the container */
+  margin-top: 25px;
+}
+
+.bike-table thead th {
+  background-color: #e1f3fc; /* Set the background color here */
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Set the background color for the header */
+  z-index: 0; /* Ensure header stays above body */
+}
+
+
+.bike-table {
+  margin-top: 0px;
+  margin-left: 40px;
+  font-size: 18px;
+  min-height: 100px;
+}
+.bike-table tbody tr:nth-child(even) {
+  background-color: #fff; /* Set the background color for even rows */
+  border-bottom: 5px solid black;
+}
+
+.bike-Search_User {
+  padding: 10px;
+  background-color: #fff;
+  border-color: black;
+  height: 2.4vh;
+  width: 10vw;
+  margin-top: 25px;
+  border-width: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  position: absolute; /* Position absolutely within the parent container */
+  right: 120px; /* Align to the right side of the parent container */
+}
+
+.addbikebutton {
+  padding: 8px 12px 10px;
+  background-color: #009efd;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  height: 2.9vh;
+  width: 6vw;
+  margin-top: 25px;
+  right: 310px; /* Align to the left side of the parent container */
+  position: absolute; /* Position absolutely within the parent container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.addbikebutton:hover {
+  background-color: rgb(51, 81, 230);
+}
+
+/* CSS */
+/* Style the dropdown button */
+.dropbtn {
+  background-color: #009efd;
+  color: white;
+  padding: 8px;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 20px;
+}
+
+.dropbtn:hover {
+  background-color: rgb(51, 81, 230);
+}
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 120px;
+  right: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the action buttons within the dropdown */
+.dropdown-content button {
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the action buttons on hover */
+.dropdown-content button:hover {
+  background-color: #d5eff3;
+}
+
+/* Style the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Position the dropdown content */
+.dropdown-content {
+  right: 0;
+}
+
+/* Add styles for the arrow */
+.arrow {
+  float: right;
+  margin-left: 5px;
+}
+
+/* Adjust the position of the dropdown content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+}
